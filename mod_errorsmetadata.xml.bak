@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" client="administrator" method="upgrade">
+    <name>Errors MetaData</name>
+    <creationDate>May 2026</creationDate>
+    <author>web-eau.net</author>
+    <authorEmail>contact@web-eau.net</authorEmail>
+    <authorUrl>https://web-eau.net</authorUrl>
+    <copyright>Copyright (C) 2026 web-eau.net. All rights reserved.</copyright>
+    <license>GNU GPLv3 - http://www.gnu.org/licenses/gpl.html</license>
+    <version>1.0.0</version>
+    <description>MOD_ERRORSMETADATA_XML_DESCRIPTION</description>
+
+    <namespace path="src">WebEau\Module\Errorsmetadata\Administrator</namespace>
+
+    <files>
+        <filename module="mod_errorsmetadata">mod_errorsmetadata.php</filename>
+        <filename>helper.php</filename>
+        <folder>src</folder>
+        <folder>tmpl</folder>
+    </files>
+
+    <languages folder="language">
+        <language tag="en-GB">en-GB/mod_errorsmetadata.ini</language>
+        <language tag="en-GB">en-GB/mod_errorsmetadata.sys.ini</language>
+        <language tag="fr-FR">fr-FR/mod_errorsmetadata.ini</language>
+        <language tag="fr-FR">fr-FR/mod_errorsmetadata.sys.ini</language>
+        <language tag="es-ES">es-ES/mod_errorsmetadata.ini</language>
+        <language tag="es-ES">es-ES/mod_errorsmetadata.sys.ini</language>
+        <language tag="ca-ES">ca-ES/mod_errorsmetadata.ini</language>
+        <language tag="ca-ES">ca-ES/mod_errorsmetadata.sys.ini</language>
+    </languages>
+
+    <config>
+        <fields name="params">
+
+            <fieldset name="seo" label="MOD_ERRORSMETADATA_FIELDSET_SEO">
+                <field
+                    name="check_keywords"
+                    type="radio"
+                    default="0"
+                    label="MOD_ERRORSMETADATA_FIELD_CHECK_KEYWORDS_LABEL"
+                    description="MOD_ERRORSMETADATA_FIELD_CHECK_KEYWORDS_DESC"
+                    layout="joomla.form.field.radio.switcher"
+                >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field
+                    name="state_filter"
+                    type="radio"
+                    default="1"
+                    label="MOD_ERRORSMETADATA_FIELD_STATE_FILTER_LABEL"
+                    description="MOD_ERRORSMETADATA_FIELD_STATE_FILTER_DESC"
+                    layout="joomla.form.field.radio.switcher"
+                >
+                    <option value="1">MOD_ERRORSMETADATA_FIELD_STATE_PUBLISHED</option>
+                    <option value="0">MOD_ERRORSMETADATA_FIELD_STATE_ALL</option>
+                </field>
+            </fieldset>
+
+            <fieldset name="articles" label="MOD_ERRORSMETADATA_FIELDSET_ARTICLES">
+                <field
+                    name="arti_count"
+                    type="number"
+                    default="5"
+                    min="0"
+                    label="MOD_ERRORSMETADATA_FIELD_COUNT_LABEL"
+                    description="MOD_ERRORSMETADATA_FIELD_COUNT_DESC"
+                />
+                <field
+                    name="arti_ordering"
+                    type="list"
+                    default="c_dsc"
+                    label="MOD_ERRORSMETADATA_FIELD_ORDERING_LABEL"
+                    description="MOD_ERRORSMETADATA_FIELD_ORDERING_DESC"
+                >
+                    <option value="c_dsc">MOD_ERRORSMETADATA_FIELD_VALUE_ORDERING_ADDED</option>
+                    <option value="m_dsc">MOD_ERRORSMETADATA_FIELD_VALUE_ORDERING_MODIFIED</option>
+                </field>
+            </fieldset>
+
+            <fieldset name="categories" label="MOD_ERRORSMETADATA_FIELDSET_CATEGORIES">
+                <field
+                    name="cate_count"
+                    type="number"
+                    default="5"
+                    min="0"
+                    label="MOD_ERRORSMETADATA_FIELD_COUNT_LABEL"
+                    description="MOD_ERRORSMETADATA_FIELD_COUNT_DESC"
+                />
+                <field
+                    name="cate_ordering"
+                    type="list"
+                    default="c_dsc"
+                    label="MOD_ERRORSMETADATA_FIELD_ORDERING_LABEL"
+                    description="MOD_ERRORSMETADATA_FIELD_ORDERING_DESC"
+                >
+                    <option value="c_dsc">MOD_ERRORSMETADATA_FIELD_VALUE_ORDERING_ADDED</option>
+                    <option value="m_dsc">MOD_ERRORSMETADATA_FIELD_VALUE_ORDERING_MODIFIED</option>
+                </field>
+            </fieldset>
+
+            <fieldset name="menus" label="MOD_ERRORSMETADATA_FIELDSET_MENUS">
+                <field
+                    name="menu_count"
+                    type="number"
+                    default="5"
+                    min="0"
+                    label="MOD_ERRORSMETADATA_FIELD_COUNT_LABEL"
+                    description="MOD_ERRORSMETADATA_FIELD_COUNT_DESC"
+                />
+            </fieldset>
+
+            <fieldset name="advanced">
+                <field
+                    name="layout"
+                    type="modulelayout"
+                    label="JFIELD_ALT_LAYOUT_LABEL"
+                    description="JFIELD_ALT_MODULE_LAYOUT_DESC"
+                />
+                <field
+                    name="moduleclass_sfx"
+                    type="text"
+                    label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                    description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
+                />
+                <field
+                    name="cache"
+                    type="list"
+                    default="0"
+                    label="COM_MODULES_FIELD_CACHING_LABEL"
+                    description="COM_MODULES_FIELD_CACHING_DESC"
+                >
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+                <field
+                    name="automatic_title"
+                    type="radio"
+                    default="0"
+                    label="COM_MODULES_FIELD_AUTOMATIC_TITLE_LABEL"
+                    description="COM_MODULES_FIELD_AUTOMATIC_TITLE_DESC"
+                    layout="joomla.form.field.radio.switcher"
+                >
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+            </fieldset>
+
+        </fields>
+    </config>
+
+</extension>
