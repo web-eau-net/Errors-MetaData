@@ -3,8 +3,9 @@
 /**
  * @package     Joomla.Administrator
  * @subpackage  mod_errorsmetadata
- * @copyright   Copyright (C) 2026 web-eau.net. All rights reserved.
- * @license     GNU General Public License version 3 or later; see LICENSE
+ * @author      web-eau.net | daniel@web-eau.net
+ * @copyright   (C) 2026 web-eau.net <https://web-eau.net>
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 
 namespace WebEau\Module\Errorsmetadata\Administrator\Helper;

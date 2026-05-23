@@ -6,11 +6,17 @@
     <authorEmail>daniel@web-eau.net</authorEmail>
     <authorUrl>https://web-eau.net</authorUrl>
     <copyright>Copyright (C) 2026 web-eau.net. All rights reserved.</copyright>
-    <license>GNU GPLv3 - http://www.gnu.org/licenses/gpl.html</license>
-    <version>1.0.0</version>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <version>1.0.1</version>
     <description>MOD_ERRORSMETADATA_XML_DESCRIPTION</description>
 
     <namespace path="src">WebEau\Module\Errorsmetadata\Administrator</namespace>
+
+    <updateservers>
+        <server type="extension" priority="1" name="Errors MetaData Updates">
+            https://raw.githubusercontent.com/web-eau-net/Errors-MetaData/main/update_server/update.xml
+        </server>
+    </updateservers>
 
     <files>
         <filename module="mod_errorsmetadata">mod_errorsmetadata.php</filename>
@@ -26,8 +32,10 @@
         <language tag="fr-FR">fr-FR/mod_errorsmetadata.sys.ini</language>
         <language tag="es-ES">es-ES/mod_errorsmetadata.ini</language>
         <language tag="es-ES">es-ES/mod_errorsmetadata.sys.ini</language>
-        <language tag="ca-ES">ca-ES/mod_errorsmetadata.ini</language>
-        <language tag="ca-ES">ca-ES/mod_errorsmetadata.sys.ini</language>
+        <language tag="de-DE">de-DE/mod_errorsmetadata.ini</language>
+        <language tag="de-DE">de-DE/mod_errorsmetadata.sys.ini</language>
+        <language tag="it-IT">it-IT/mod_errorsmetadata.ini</language>
+        <language tag="it-IT">it-IT/mod_errorsmetadata.sys.ini</language>
     </languages>
 
     <config>
