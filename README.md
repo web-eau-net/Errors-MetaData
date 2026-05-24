@@ -14,7 +14,7 @@ A Joomla 6 administrator module that detects SEO metadata issues in your article
 - Bootstrap 5 tabs (Articles / Categories / Menu Items)
 - Optional meta keywords check (disabled by default — ignored by search engines)
 - Filter by published state
-- Fully compatible with **Joomla 6** and the Cassiopeia admin template
+- Fully compatible with **Joomla 6** and the Atum admin template
 
 ## Requirements
 
